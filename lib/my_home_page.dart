@@ -9,7 +9,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  Future<List<String>> getData() async {
+  Future<List> getData() async {
     String theUrl = "https://jsonplaceholder.typicode.com/posts";
     var res = await http
         .get(Uri.parse(theUrl), headers: {"Accept": "Application/json"});
