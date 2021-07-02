@@ -40,8 +40,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 itemCount: snap.length,
                 itemBuilder: (context, index) {
                   return ListTile(
-                    title: Text('${snapshot.data[index]["title"]}'),
-                    subtitle: Text('${snapshot.data[index]["body"]}'),
+                    title:
+                        Text('${snapshot.data[index]["transaction_amount"]}'),
+                    subtitle: Text(
+                        '${snapshot.data[index]["transaction_Sender_Name"]}'),
                   );
                 });
           },
